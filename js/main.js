@@ -55,7 +55,7 @@ $(document).ready(function(){
                     <p><span>營業主體: </span>${getData.data.data[i].營業主體}</p>
                     <p><span>站名: </span>${getData.data.data[i].站名}</p>
                     <p><span>行政區: </span>${getData.data.data[i].行政區}</p>
-                    <p><span>站址: </span>${getData.data.data[i].站址}</p>
+                    <p><span>站址: </span><a href="https://www.google.com.tw/maps/place/${getData.data.data[i].站址}" target="_blank">${getData.data.data[i].站址}</a></p>
                     <p><span>電話號碼: </span>${getData.data.data[i].電話號碼}</p>
                   </div></li>`
           }
