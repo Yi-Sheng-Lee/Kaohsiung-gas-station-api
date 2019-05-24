@@ -1,0 +1,117 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+.headerbg{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/CPC_Corporation%2C_Taiwan_Seal.svg/800px-CPC_Corporation%2C_Taiwan_Seal.svg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+.header-text{
+  font-family: .PingFangTC-Regular;
+  font-size: 40px;
+  color: #00000;
+  letter-spacing: 3.89px;
+}
+
+#locateSelect{
+  display:block;
+  width: 60%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.70);
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+}
+
+/* content */
+.hot-station{
+  width:70%; 
+  margin: 0 auto;
+  text-align:center;
+  
+}
+.line{
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #559AC8;
+  animation: colorChange 5s infinite;
+}
+.line::after{
+  content: " ";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+
+  animation: colorChange 5s infinite;
+
+}
+
+@keyframes colorChange{
+  0% {
+    border: 2px solid #559ac8;
+    background: #559ac8;
+  }
+  20% {
+    border: 2px solid #8a82cc;
+    background: #8a82cc;
+  }
+  60% {
+    border: 2px solid #f5d005;
+    background: #f5d005;
+  }
+  80% {
+    border: 2px solid #ffa782;
+    background: #ffa782;
+  }
+  100% {
+    border: 2px solid #559ac8;
+    background: #559ac8;
+  }
+}
+.imgA{
+  position: absolute;
+  z-index: 1;
+  animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+  50% {
+    transform: rotateY(270deg);
+  }
+}
+
+
+
+.locateName{
+  font-size: 36px;
+color: #8A82CC;
+}
+
+.list{
+  list-style-type:none;
+  
+}
+.footerp1{
+color: #FFFFFF;
+}
+.footerp2{
+color: #FFD366;
+text-decoration: none;
+}
+.footerp2:active{
+  color: #FFD366;
+  text-decoration: none;
+}
+footer{
+  background: #559AC8;
+}
